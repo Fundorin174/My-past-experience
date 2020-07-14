@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
+.bg-primary{
+  background-color: #6e6e70!important;
+}
+
+.bg-secondary{
+  background-color: #eae5e5!important;
+}
 
