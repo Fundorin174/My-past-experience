@@ -1,5 +1,6 @@
 .App {
   /* text-align: center; */
+  height: 100vh;
 }
 
 .bg-primary{
@@ -10,3 +11,21 @@
   background-color: #eae5e5!important;
 }
 
+#footer {
+  max-height: 100px;
+}
+
+#card-img {
+  height: 50px;
+  width: 50px;
+}
+/* for main page */
+@media all and (max-height: 650px) {
+  h3 {
+    display: none;
+  }
+
+ #main-img {
+    width: 60%;
+  }
+}
