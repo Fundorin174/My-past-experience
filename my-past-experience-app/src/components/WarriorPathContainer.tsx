@@ -16,6 +16,7 @@ export type WarriorPathConteinerPropsType = MapStateToPropsType &
 
 const mapStateToProps = (state: AppStateType): MapStateToPropsType => ({
   pathName: state.wayOfWarrior.pathName,
+  navBarList: state.wayOfWarrior.navBarList
 });
 
 export default compose(
