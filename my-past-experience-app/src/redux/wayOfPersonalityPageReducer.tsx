@@ -1,6 +1,6 @@
 
 let initialState = {
-    isLoading: true
+    pathName: 'personality'
 };
   
 
