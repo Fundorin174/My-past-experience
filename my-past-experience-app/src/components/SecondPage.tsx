@@ -4,12 +4,13 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/esm/Image';
 import { photoType } from './../redux/wayOfHumanPageReducer';
+import Container from 'react-bootstrap/Container';
 
 
 const SecondPage: React.FC<any> = React.memo((props) => {
 
   useEffect(() => {
-    props.setCurrentList(props.navBarList[0])
+    !props.currentList.ID && props.setCurrentList(props.navBarList[0]);
   }, [props.currentList])
 
 
@@ -17,7 +18,8 @@ const SecondPage: React.FC<any> = React.memo((props) => {
   const navbarIcons = props.navBarList.map((item: any, index: number) => {
     let keyOfItem = item.title.split('').reduce((accum: number, char: string) => accum + char.charCodeAt(0), 0) / item.title.length + index;
 
-    return <li key={keyOfItem} className="list-group-item list-group-item-action list-group-item-info pl-0">
+    return <li key={keyOfItem} className="list-group-item list-group-item-action list-group-item-info pl-0"
+    onClick = {()=>{props.setCurrentList(props.navBarList[item.ID])}}>
       <Image
         src={item.iconImgUrl}
         width="50"
@@ -28,6 +30,10 @@ const SecondPage: React.FC<any> = React.memo((props) => {
       />
       {item.title}</li>
   })
+  let mainDescriptionItems = props.currentList.mainDescription?.map((phrase: string) => {
+  return <p>{phrase}</p>
+  })
+
   let caruselCreation = props.currentList.photos?.map((photoItem: photoType, index:number) => {
     return <Carousel.Item key = {index} >
       <img 
@@ -44,13 +50,16 @@ const SecondPage: React.FC<any> = React.memo((props) => {
 
   
   return (
-    <Row id="main-content" className="h-100 pt-0 pb-0 bg-secondary d-flex align-content-center " >
+    <Row id="main-content" className="h-100 pt-0 pb-0 bg-secondary d-flex align-content-center ">
       <Col md={3} xs={1} className="bg-success h-100" >
         <ul className="list-group mt-3">
           {navbarIcons}
         </ul>
       </Col>
       <Col id='caruselWrp' md={9} xs={11} className="h-100 ">
+        <Container fluid>
+          {mainDescriptionItems}
+        </Container>
         <Carousel>
           {caruselCreation}
         </Carousel>

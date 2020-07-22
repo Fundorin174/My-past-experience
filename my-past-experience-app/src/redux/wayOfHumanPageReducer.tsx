@@ -3,6 +3,7 @@ import childIconImg from './../img/human/childhood.png';
 import husbandIconImg from './../img/human/husband.png';
 import ownerIconImg from './../img/human/Owner.png';
 import fatherIconImg from './../img/human/father.png';
+
 import child1 from './../img/human/child/child1.jpg';
 import child2 from './../img/human/child/child2.jpg';
 import child3 from './../img/human/child/child3.jpg';
@@ -16,7 +17,43 @@ import child10 from './../img/human/child/child10.jpg';
 import child11 from './../img/human/child/child11.jpg';
 import child12 from './../img/human/child/child12.jpg';
 import child13 from './../img/human/child/child13.jpg';
-import husband1 from './../img/human/child/child13.jpg';
+
+import husband1 from './../img/human/husband/husband1.jpg';
+import husband2 from './../img/human/husband/husband2.jpg';
+import husband3 from './../img/human/husband/husband3.jpg';
+import husband4 from './../img/human/husband/husband4.jpg';
+import husband5 from './../img/human/husband/husband5.jpg';
+import husband6 from './../img/human/husband/husband6.jpg';
+import husband7 from './../img/human/husband/husband7.jpg';
+import husband8 from './../img/human/husband/husband8.jpg';
+import husband9 from './../img/human/husband/husband9.jpg';
+import husband10 from './../img/human/husband/husband10.jpg';
+import husband11 from './../img/human/husband/husband11.jpg';
+import husband12 from './../img/human/husband/husband12.jpg';
+import husband13 from './../img/human/husband/husband13.jpg';
+import husband14 from './../img/human/husband/husband14.jpg';
+import husband15 from './../img/human/husband/husband15.jpg';
+
+import owner1 from './../img/human/owner/owner1.jpg';
+import owner2 from './../img/human/owner/owner2.jpg';
+import owner3 from './../img/human/owner/owner3.jpg';
+import owner4 from './../img/human/owner/owner4.jpg';
+import owner5 from './../img/human/owner/owner5.jpg';
+import owner6 from './../img/human/owner/owner6.jpg';
+import owner7 from './../img/human/owner/owner7.jpg';
+import owner8 from './../img/human/owner/owner8.jpg';
+
+import father1 from './../img/human/father/father1.jpg';
+import father2 from './../img/human/father/father2.jpg';
+import father3 from './../img/human/father/father3.jpg';
+import father4 from './../img/human/father/father4.jpg';
+import father5 from './../img/human/father/father5.jpg';
+import father6 from './../img/human/father/father6.jpg';
+import father7 from './../img/human/father/father7.jpg';
+import father8 from './../img/human/father/father8.jpg';
+import father9 from './../img/human/father/father9.jpg';
+import father10 from './../img/human/father/father10.jpg';
+import father11 from './../img/human/father/father11.jpg';
 
 
 const SET_CURRENT_LIST = 'MY_EXPERIENCE/HUMAN/SET_CURRENT_LIST';
@@ -86,7 +123,7 @@ let initialState = {
                     description: 'Отец'                
                 },
                 {
-                    title: 'Мать',
+                    title: 'Мама',
                     url: child6,
                     description: ''                
                 },
@@ -139,10 +176,78 @@ let initialState = {
                 {
                     title: '',
                     url: husband1,
-                    description: 'Как молоды мы были'                
+                    description: 'Как молоды мы были...'                
                 },
-
-
+                {
+                    title: '',
+                    url: husband2,
+                    description: 'Проверка на прочность-))'                
+                },
+                {
+                    title: '',
+                    url: husband3,
+                    description: 'Моменты настоящего счастья'                
+                },
+                {
+                    title: '',
+                    url: husband4,
+                    description: 'Впереди новая жизнь...'                
+                },
+                {
+                    title: '',
+                    url: husband5,
+                    description: 'Чтбы стать женой генерала, надо выйти замуж за лейтенента'                
+                },
+                {
+                    title: '',
+                    url: husband6,
+                    description: 'Везде вместе'                
+                },
+                {
+                    title: '',
+                    url: husband7,
+                    description: 'Спортивная семья'                
+                },
+                {
+                    title: '',
+                    url: husband8,
+                    description: 'Красивая пара'                
+                },
+                {
+                    title: '',
+                    url: husband9,
+                    description: 'Любовь проверяется годами'                
+                },
+                {
+                    title: '',
+                    url: husband10,
+                    description: 'Кто тут главный?-))'                
+                },
+                {
+                    title: '',
+                    url: husband11,
+                    description: 'Под Новый год'                
+                },
+                {
+                    title: '',
+                    url: husband12,
+                    description: 'Всё ещё неплохо смотримся'                
+                },
+                {
+                    title: '',
+                    url: husband13,
+                    description: 'На жёнах всё держится'                
+                },
+                {
+                    title: '',
+                    url: husband14,
+                    description: 'Красавица'                
+                },
+                {
+                    title: '',
+                    url: husband15,
+                    description: '15-летие свадьбы! Как вчера...'                
+                },
             ]
         },
         {
@@ -156,16 +261,45 @@ let initialState = {
                             ],
             photos: [
                 {
-                    title: 'photo1',
-                    url: './../img/human/childhood.png',
-                    description: 'Какие огромные в детстве медведи'                
+                    title: '',
+                    url: owner1,
+                    description: 'Со Спартаком, за Спартак!'                
                 },
                 {
-                    title: 'photo2',
-                    url: './../img/human/Owner.png',
-                    description: 'Моя семья'                
+                    title: '',
+                    url: owner2,
+                    description: 'Я Ваш подарочек...'                
                 },
-
+                {
+                    title: '',
+                    url: owner3,
+                    description: 'Зверь'                
+                },
+                {
+                    title: '',
+                    url: owner4,
+                    description: 'Сторожевой пёс-))'                
+                },
+                {
+                    title: '',
+                    url: owner5,
+                    description: 'Порода из Тибета,суши любит-)'                
+                },
+                {
+                    title: '',
+                    url: owner6,
+                    description: 'Милашки'                
+                },
+                {
+                    title: '',
+                    url: owner7,
+                    description: 'Антистресс'                
+                },
+                {
+                    title: '',
+                    url: owner8,
+                    description: 'Сугроб пришёл-)'                
+                },
             ]
         },
         {
@@ -180,14 +314,60 @@ let initialState = {
             photos: [
                 {
                     title: '',
-                    url: './../img/human/childhood.png',
-                    description: 'Какие огромные в детстве медведи'                
+                    url: father1,
+                    description: 'За рулём лимузина'                
                 },
                 {
                     title: '',
-                    url: './../img/human/Owner.png',
-                    description: 'Моя семья'                
+                    url: father2,
+                    description: 'Паровозик радости'                
                 },
+                {
+                    title: '',
+                    url: father3,
+                    description: 'С детства за Спартак!'                
+                },
+                {
+                    title: '',
+                    url: father4,
+                    description: 'Доча'                
+                },
+                {
+                    title: '',
+                    url: father5,
+                    description: 'Всё семейство на даче'                
+                },
+                {
+                    title: '',
+                    url: father6,
+                    description: 'На природе'                
+                },
+                {
+                    title: '',
+                    url: father7,
+                    description: 'Семейная фотосессия'                
+                },
+                {
+                    title: '',
+                    url: father8,
+                    description: 'Маленький, а уже грозный-)'                
+                },
+                {
+                    title: '',
+                    url: father9,
+                    description: 'Моя принцесса'                
+                },
+                {
+                    title: '',
+                    url: father10,
+                    description: 'Семья!'                
+                },
+                {
+                    title: '',
+                    url: father11,
+                    description: 'Первые уроки вождения'                
+                },
+
 
             ]
         }
