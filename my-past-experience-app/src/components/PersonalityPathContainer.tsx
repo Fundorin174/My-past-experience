@@ -16,6 +16,7 @@ export type PersonalityPathConteinerPropsType = MapStateToPropsType &
 
 const mapStateToProps = (state: AppStateType): MapStateToPropsType => ({
   pathName: state.wayOfPersonality.pathName,
+  navBarList: state.wayOfPersonality.navBarList
 });
 
 export default compose(

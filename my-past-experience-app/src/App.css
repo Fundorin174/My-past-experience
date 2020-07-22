@@ -19,6 +19,21 @@
   height: 50px;
   width: 50px;
 }
+
+.carousel-inner{
+  width:auto;
+  height:100vh;
+
+}
+
+.carousel-item > img {
+  max-height: 100%!important; 
+}
+
+
+
+
+
 /* for main page */
 @media all and (max-height: 650px) {
   h3 {

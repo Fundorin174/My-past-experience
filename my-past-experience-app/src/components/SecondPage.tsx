@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { WarriorPathConteinerPropsType } from './WarriorPathContainer';
+import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/esm/Image';
+import { photoType } from './../redux/wayOfHumanPageReducer';
 
 
 const SecondPage: React.FC<any> = React.memo((props) => {
+
+  useEffect(() => {
+    props.setCurrentList(props.navBarList[0])
+  }, [props.currentList])
+
+
+
   const navbarIcons = props.navBarList.map((item: any, index: number) => {
     let keyOfItem = item.title.split('').reduce((accum: number, char: string) => accum + char.charCodeAt(0), 0) / item.title.length + index;
 
@@ -20,7 +28,21 @@ const SecondPage: React.FC<any> = React.memo((props) => {
       />
       {item.title}</li>
   })
+  let caruselCreation = props.currentList.photos?.map((photoItem: photoType, index:number) => {
+    return <Carousel.Item key = {index} >
+      <img 
+        className="d-block mw-100 h-auto "
+        src={photoItem.url}
+        alt="First slide"        
+      />
+      <Carousel.Caption>
+        <h3>{photoItem.title}</h3>
+        <p>{photoItem.description}</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  })
 
+  
   return (
     <Row id="main-content" className="h-100 pt-0 pb-0 bg-secondary d-flex align-content-center " >
       <Col md={3} xs={1} className="bg-success h-100" >
@@ -28,7 +50,11 @@ const SecondPage: React.FC<any> = React.memo((props) => {
           {navbarIcons}
         </ul>
       </Col>
-      <Col md={9} xs={11} className="h-100 ">Какой то путь: {props.pathName}</Col>
+      <Col id='caruselWrp' md={9} xs={11} className="h-100 ">
+        <Carousel>
+          {caruselCreation}
+        </Carousel>
+      </Col>
     </Row>
   )
 })

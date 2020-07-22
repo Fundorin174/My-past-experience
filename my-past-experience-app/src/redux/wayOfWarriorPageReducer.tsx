@@ -6,45 +6,41 @@ import sheduleIconImg from './../img/warrior/schedule.png';
 import chiefHelperIconImg from './../img/warrior/chief_helper.png';
 import magistrIconImg from './../img/warrior/magistr.png';
 import teacherIconImg from './../img/warrior/teacher.png';
-import webDevIconImg from './../img/warrior/teacher.png';
+
 
 let initialState = {
     pathName: 'warrior',
     navBarList: [
         {
-            title: 'лицеист',
+            title: 'Лицеист',
             iconImgUrl: liceistIconImg
         },
         {
-            title: 'курсант',
+            title: 'Курсант',
             iconImgUrl: fsoIconImg
         },
         {
-            title: 'связист',
+            title: 'Связист',
             iconImgUrl: troopsIconImg
         },
         {
-            title: 'кандидат',
+            title: 'Кандидат',
             iconImgUrl: baumanaIconImg
         },
         {
-            title: 'планер',
+            title: 'Планер',
             iconImgUrl: sheduleIconImg
         },
         {
-            title: 'старпом',
+            title: 'Старпом',
             iconImgUrl: chiefHelperIconImg
         },
         {
-            title: 'магистр',
+            title: 'Магистр',
             iconImgUrl: magistrIconImg
         },
         {
-            title: 'преподаватель',
-            iconImgUrl: teacherIconImg
-        },
-        {
-            title: 'разработчик',
+            title: 'Преподаватель',
             iconImgUrl: teacherIconImg
         }
     ]
