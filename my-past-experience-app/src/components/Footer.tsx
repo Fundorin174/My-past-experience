@@ -69,7 +69,7 @@ const Footer: React.FC<any> = React.memo((props) => {
               width="37"
               height="37"
               className="d-inline-block align-middle mr-2"
-              alt="vk"
+              alt="linledIn"
               roundedCircle/>
               </Card.Link>
             <Card.Link href="https://github.com/Fundorin174" target="_blank" rel="noopener">
@@ -78,7 +78,7 @@ const Footer: React.FC<any> = React.memo((props) => {
               width="37"
               height="37"
               className="d-inline-block align-middle mr-2"
-              alt="instagram"
+              alt="github"
               />
             </Card.Link>
             <Card.Link href="https://www.youtube.com/channel/UCTRQvfXq2YRe3h_TQmkn47Q?view_as=subscriber" target="_blank" rel="noopener">
