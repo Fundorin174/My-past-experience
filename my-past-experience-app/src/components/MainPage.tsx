@@ -11,7 +11,7 @@ import man from './../img/logo_human.png';
 
 const MainPage: React.FC<any> = React.memo((props) => {
     return (
-      <Row id="main-content" className="h-100 pt-5 pb-5 bg-secondary d-flex align-content-center " >
+      <Row id="main-content" className="mh-100 pt-5 pb-5 bg-secondary d-flex align-content-center " >
       <Col xs={12} md={4} lg={6} className="text-center d-none d-md-block">
         <Image id='main-img' className="align-middle"
           src={mainPhoto}

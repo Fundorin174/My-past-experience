@@ -7,42 +7,156 @@ import chiefHelperIconImg from './../img/warrior/chief_helper.png';
 import magistrIconImg from './../img/warrior/magistr.png';
 import teacherIconImg from './../img/warrior/teacher.png';
 
+import warrior1 from './../img/warrior/teacher.png';
+
 
 let initialState = {
     pathName: 'warrior',
     navBarList: [
         {
+            ID: 0,
             title: 'Лицеист',
-            iconImgUrl: liceistIconImg
+            iconImgUrl: liceistIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: warrior1,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 1,
             title: 'Курсант',
-            iconImgUrl: fsoIconImg
+            iconImgUrl: fsoIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: warrior1,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 2,
             title: 'Связист',
-            iconImgUrl: troopsIconImg
+            iconImgUrl: troopsIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 3,
             title: 'Кандидат',
-            iconImgUrl: baumanaIconImg
+            iconImgUrl: baumanaIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 4,
             title: 'Планер',
-            iconImgUrl: sheduleIconImg
+            iconImgUrl: sheduleIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 5,
             title: 'Старпом',
-            iconImgUrl: chiefHelperIconImg
+            iconImgUrl: chiefHelperIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 6,
             title: 'Магистр',
-            iconImgUrl: magistrIconImg
+            iconImgUrl: magistrIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
         },
         {
+            ID: 7,
             title: 'Преподаватель',
-            iconImgUrl: teacherIconImg
-        }
+            iconImgUrl: teacherIconImg,
+            mainDescription: [' ',
+                                ' ',
+                                ' ',
+                                ' '
+                            ],
+            photos: [
+                {
+                    title: '',
+                    url: fsoIconImg,
+                    description: ' '                
+                },
+                
+            ]
+        },
     ]
 };
   

@@ -66,8 +66,8 @@ const Footer: React.FC<any> = React.memo((props) => {
             <Card.Link href="https://vk.com/fundorin174" target="_blank" rel="noopener">
               <Image
               src={vk}
-              width="40"
-              height="40"
+              width="37"
+              height="37"
               className="d-inline-block align-middle mr-2"
               alt="vk"
               roundedCircle/>
@@ -75,8 +75,8 @@ const Footer: React.FC<any> = React.memo((props) => {
             <Card.Link href="https://www.instagram.com/vnikny/" target="_blank" rel="noopener">
             <Image
               src={instagram}
-              width="40"
-              height="40"
+              width="37"
+              height="37"
               className="d-inline-block align-middle mr-2"
               alt="instagram"
               />
@@ -84,8 +84,8 @@ const Footer: React.FC<any> = React.memo((props) => {
             <Card.Link href="https://www.youtube.com/channel/UCTRQvfXq2YRe3h_TQmkn47Q?view_as=subscriber" target="_blank" rel="noopener">
             <Image
               src={youtube}
-              width="40"
-              height="40"
+              width="37"
+              height="37"
               className="d-inline-block align-middle mr-2"
               alt="youtube"
               />

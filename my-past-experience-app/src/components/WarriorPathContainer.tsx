@@ -3,10 +3,17 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 import { AppStateType } from "../redux/redux-store";
 import SecondPage from "./SecondPage";
+import {setCurrentList, ListType } from "../redux/wayOfHumanPageReducer";
 
-type MapStateToPropsType = {};
+type MapStateToPropsType = {
+  pathName: string,
+  navBarList: Array<ListType>,
+  currentList: ListType,
+};
 
-type MapDisparchToPropsType = {};
+type MapDisparchToPropsType = {
+  setCurrentList: (list: ListType) => void;
+};
 
 type OwnPropsType = {};
 
@@ -16,7 +23,8 @@ export type WarriorPathConteinerPropsType = MapStateToPropsType &
 
 const mapStateToProps = (state: AppStateType): MapStateToPropsType => ({
   pathName: state.wayOfWarrior.pathName,
-  navBarList: state.wayOfWarrior.navBarList
+  navBarList: state.wayOfWarrior.navBarList,
+  currentList: state.wayOfHuman.currentList
 });
 
 export default compose(
@@ -25,5 +33,5 @@ export default compose(
     MapDisparchToPropsType,
     OwnPropsType,
     AppStateType
-  >(mapStateToProps, {})
+  >(mapStateToProps, {setCurrentList})
 )(SecondPage);

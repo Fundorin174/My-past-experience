@@ -20,18 +20,9 @@
   width: 50px;
 }
 
-.carousel-inner{
-  width:auto;
-  height:100vh;
-
+.photoDescription{
+  background-color: rgba(110, 110, 112, 0.5);
 }
-
-.carousel-item > img {
-  max-height: 100%!important; 
-}
-
-
-
 
 
 /* for main page */
@@ -43,4 +34,33 @@
  #main-img {
     width: 60%;
   }
+}
+
+
+
+/* lg custom styles */
+@media all and (max-width: 992px){
+  .navBarItemTitle{
+    font-size: 0.7rem;
+  }
+  .navBarTitleImage {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+/* md custom styles */
+@media all and (max-width: 768px) {
+  .navBarColumn {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navBarTitleImage {
+    margin-left: 0px!important;
+  }
+
+
 }

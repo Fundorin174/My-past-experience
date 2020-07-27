@@ -5,7 +5,11 @@ import { AppStateType } from "../redux/redux-store";
 import SecondPage from "./SecondPage";
 import  {setCurrentList, ListType } from './../redux/wayOfHumanPageReducer';
 
-type MapStateToPropsType = {};
+type MapStateToPropsType = {
+  pathName: string,
+  navBarList: Array<ListType>,
+  currentList: ListType,
+};
 
 type MapDisparchToPropsType = {
   setCurrentList: (list: ListType) => void;

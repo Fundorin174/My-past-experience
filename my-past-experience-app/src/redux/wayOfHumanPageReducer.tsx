@@ -62,7 +62,8 @@ const SET_CURRENT_LIST = 'MY_EXPERIENCE/HUMAN/SET_CURRENT_LIST';
 export type photoType = {
     title: string,
     url: string,
-    description: string        
+    description: string,
+    isVerticalOriented?: boolean        
 }
 
 export type ListType = {
@@ -120,7 +121,8 @@ let initialState = {
                 {
                     title: '',
                     url: child5,
-                    description: 'Отец'                
+                    description: 'Отец',
+                    isVerticalOriented: true                
                 },
                 {
                     title: 'Мама',
@@ -130,27 +132,32 @@ let initialState = {
                 {
                     title: '',
                     url: child7,
-                    description: 'Я'                
+                    description: 'Я',
+                    isVerticalOriented: true                  
                 },
                 {
                     title: '',
                     url: child8,
-                    description: 'В детском саду'                
+                    description: 'В детском саду',
+                    isVerticalOriented: true                  
                 },
                 {
                     title: '',
                     url: child9,
-                    description: 'Пока отец на службе'                
+                    description: 'Пока отец на службе',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: child10,
-                    description: 'Не в настроении...'                
+                    description: 'Не в настроении...',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: child11,
-                    description: 'Октябренок'                
+                    description: 'Октябренок',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
@@ -160,7 +167,8 @@ let initialState = {
                 {
                     title: '',
                     url: child13,
-                    description: 'С любимой бабушкой'                
+                    description: 'С любимой бабушкой',
+                    isVerticalOriented: true                     
                 },
             ]
         },
@@ -176,7 +184,8 @@ let initialState = {
                 {
                     title: '',
                     url: husband1,
-                    description: 'Как молоды мы были...'                
+                    description: 'Как молоды мы были...',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
@@ -196,7 +205,8 @@ let initialState = {
                 {
                     title: '',
                     url: husband5,
-                    description: 'Чтбы стать женой генерала, надо выйти замуж за лейтенента'                
+                    description: 'Чтбы стать женой генерала, надо выйти замуж за лейтенента',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
@@ -206,74 +216,85 @@ let initialState = {
                 {
                     title: '',
                     url: husband7,
-                    description: 'Спортивная семья'                
+                    description: 'Спортивная семья',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband8,
-                    description: 'Красивая пара'                
+                    description: 'Красивая пара',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband9,
-                    description: 'Любовь проверяется годами'                
+                    description: 'Любовь проверяется годами',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband10,
-                    description: 'Кто тут главный?-))'                
+                    description: 'Кто тут главный?-))',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband11,
-                    description: 'Под Новый год'                
+                    description: 'Под Новый год',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband12,
-                    description: 'Всё ещё неплохо смотримся'                
+                    description: 'Всё ещё неплохо смотримся',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband13,
-                    description: 'На жёнах всё держится'                
+                    description: 'На жёнах всё держится',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband14,
-                    description: 'Красавица'                
+                    description: 'Красавица',
+                    isVerticalOriented: true                     
                 },
                 {
                     title: '',
                     url: husband15,
-                    description: '15-летие свадьбы! Как вчера...'                
+                    description: '15-летие свадьбы! Как вчера...',
+                    isVerticalOriented: true                     
                 },
             ]
         },
         {
             ID: 2,
-            title: 'Собаковод',
+            title: 'Хозяин',
             iconImgUrl: ownerIconImg,
-            mainDescription: ['1980-1997 годы',
-                                'Я родился 25 февраля 1980 года в Белоруссии. Через год мой отец подписал контракт на службу в армии, и его направили служить на Кольский полуостров, в закрытый городок Гаджиево. Там и прошло моё детство.',
-                                'Мой отец служил в строительных войсках, был начальником вещевой и продовольственной служб полка. Мать освоила несколько профессий: от товароведа до бухгалтера. В закрытом городке особого выбора не было. Ещё у меня есть любимая родная сестра.',
-                                'В 1986 году мы переехали в Воронеж, где и живём до сих пор.'
+            mainDescription: ['с 2009 года',
+                                'Вот уже 11 лет в нашей семье живёт мохнатый друг породы Ши-Тцу. Зовут его Спартак, и это самый умный и доброжелательный пёс из всех, кого я видел.',
+                                'Так как мы вместе с ним болеем за Спартак, то ему положена вкусная печенька за каждый забитый гол. Зная это, он болеет азартнее меня и давно научился определять забитые мячи-))'
                             ],
             photos: [
                 {
                     title: '',
                     url: owner1,
-                    description: 'Со Спартаком, за Спартак!'                
+                    description: 'Со Спартаком, за Спартак!',
+                    isVerticalOriented: true                             
                 },
                 {
                     title: '',
                     url: owner2,
-                    description: 'Я Ваш подарочек...'                
+                    description: 'Я Ваш подарочек...',
+                    isVerticalOriented: true                         
                 },
                 {
                     title: '',
                     url: owner3,
-                    description: 'Зверь'                
+                    description: 'Зверь',
+                    isVerticalOriented: true                             
                 },
                 {
                     title: '',
@@ -288,7 +309,8 @@ let initialState = {
                 {
                     title: '',
                     url: owner6,
-                    description: 'Милашки'                
+                    description: 'Милашки',
+                    isVerticalOriented: true                             
                 },
                 {
                     title: '',
@@ -298,7 +320,8 @@ let initialState = {
                 {
                     title: '',
                     url: owner8,
-                    description: 'Сугроб пришёл-)'                
+                    description: 'Сугроб пришёл-)',
+                    isVerticalOriented: true                             
                 },
             ]
         },
@@ -306,16 +329,14 @@ let initialState = {
             ID: 3,
             title: 'Отец',
             iconImgUrl: fatherIconImg,
-            mainDescription: ['1980-1997 годы',
-                                'Я родился 25 февраля 1980 года в Белоруссии. Через год мой отец подписал контракт на службу в армии, и его направили служить на Кольский полуостров, в закрытый городок Гаджиево. Там и прошло моё детство.',
-                                'Мой отец служил в строительных войсках, был начальником вещевой и продовольственной служб полка. Мать освоила несколько профессий: от товароведа до бухгалтера. В закрытом городке особого выбора не было. Ещё у меня есть любимая родная сестра.',
-                                'В 1986 году мы переехали в Воронеж, где и живём до сих пор.'
+            mainDescription: ['С 2013 года',
+                                '15 октября 2013 года у нас родились очаровательные двойняшки Алёна и Илья. Несмотря на то, что родились они одновременно, это два абсолютно разных человечка с совершенно разными характерами.'
                             ],
             photos: [
                 {
                     title: '',
                     url: father1,
-                    description: 'За рулём лимузина'                
+                    description: 'За рулём лимузина'    
                 },
                 {
                     title: '',
@@ -350,7 +371,8 @@ let initialState = {
                 {
                     title: '',
                     url: father8,
-                    description: 'Маленький, а уже грозный-)'                
+                    description: 'Маленький, а уже грозный-)',
+                    isVerticalOriented: true                             
                 },
                 {
                     title: '',
@@ -360,19 +382,21 @@ let initialState = {
                 {
                     title: '',
                     url: father10,
-                    description: 'Семья!'                
+                    description: 'Семья!',
+                    isVerticalOriented: true                             
                 },
                 {
                     title: '',
                     url: father11,
-                    description: 'Первые уроки вождения'                
+                    description: 'Первые уроки вождения',
+                    isVerticalOriented: true                             
                 },
 
 
             ]
         }
     ],
-    currentList: {}
+    currentList: {} as ListType
 };
   
 
