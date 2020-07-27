@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import phone from './../img/icons/phone.png';
 import email from './../img/icons/email.png';
-import instagram from './../img/icons/instagram.png';
+import linledIn from './../img/icons/linkedIn.png';
 import telegram from './../img/icons/telegram.png';
 import viber from './../img/icons/viber.png';
-import vk from './../img/icons/vk.png';
+import github from './../img/icons/github.png';
 import whatsapp from './../img/icons/whatsapp.png';
 import youtube from './../img/icons/youtube.png';
 const Footer: React.FC<any> = React.memo((props) => {
@@ -63,18 +63,18 @@ const Footer: React.FC<any> = React.memo((props) => {
         <Card  className= "d-flex flex-row h-100 mb-0 bg-primary">
             <Card.Body className="m-0">
             <Card.Title className="mb-2">Заходите</Card.Title>
-            <Card.Link href="https://vk.com/fundorin174" target="_blank" rel="noopener">
+            <Card.Link href="https://www.linkedin.com/in/fundorin174/" target="_blank" rel="noopener">
               <Image
-              src={vk}
+              src={linledIn}
               width="37"
               height="37"
               className="d-inline-block align-middle mr-2"
               alt="vk"
               roundedCircle/>
               </Card.Link>
-            <Card.Link href="https://www.instagram.com/vnikny/" target="_blank" rel="noopener">
+            <Card.Link href="https://github.com/Fundorin174" target="_blank" rel="noopener">
             <Image
-              src={instagram}
+              src={github}
               width="37"
               height="37"
               className="d-inline-block align-middle mr-2"
