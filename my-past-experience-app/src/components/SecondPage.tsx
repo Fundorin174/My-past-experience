@@ -47,9 +47,24 @@ const SecondPage: React.FC<any> = React.memo((props) => {
   })
 
   let caruselCreation = props.currentList.photos?.map((photoItem: photoType, index:number) => {
+    let orientationSizing;
+    switch (photoItem.orientation) {
+      case 'portrait':
+        orientationSizing = 'w-100';
+        break;
+      case 'landscape':
+        orientationSizing = 'w-50';
+        break;
+      case 'square':
+        orientationSizing = 'w-75';
+        break;
+      default:
+        orientationSizing = 'w-100';
+    }
+    
     return <Carousel.Item key = {index}>
       <img 
-        className={`${photoItem.isVerticalOriented ? 'w-50' : 'w-100'} d-block h-auto ml-auto mr-auto`}
+        className={`${orientationSizing} d-block h-auto ml-auto mr-auto`}
         src={photoItem.url}
         alt="First slide"        
       />

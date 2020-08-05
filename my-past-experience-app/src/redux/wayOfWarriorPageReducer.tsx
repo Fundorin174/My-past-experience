@@ -26,7 +26,8 @@ let initialState = {
                 {
                     title: '',
                     url: warrior1,
-                    description: ' '                
+                    description: ' ' ,
+                    orientation: 'portrait'                
                 },
                 
             ]
@@ -44,7 +45,8 @@ let initialState = {
                 {
                     title: '',
                     url: warrior1,
-                    description: ' '                
+                    description: ' ',
+                    orientation: 'portrait'                 
                 },
                 
             ]
@@ -62,7 +64,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ',
+                    orientation: 'portrait'                 
                 },
                 
             ]
@@ -80,7 +83,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ' ,
+                    orientation: 'portrait'                
                 },
                 
             ]
@@ -98,7 +102,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ' ,
+                    orientation: 'portrait'                
                 },
                 
             ]
@@ -116,7 +121,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ',
+                    orientation: 'portrait'                 
                 },
                 
             ]
@@ -134,7 +140,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ',
+                    orientation: 'portrait'                 
                 },
                 
             ]
@@ -152,7 +159,8 @@ let initialState = {
                 {
                     title: '',
                     url: fsoIconImg,
-                    description: ' '                
+                    description: ' ',
+                    orientation: 'portrait'                 
                 },
                 
             ]

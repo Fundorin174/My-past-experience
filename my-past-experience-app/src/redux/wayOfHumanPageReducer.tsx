@@ -63,7 +63,7 @@ export type photoType = {
     title: string,
     url: string,
     description: string,
-    isVerticalOriented?: boolean        
+    orientation: string,        
 }
 
 export type ListType = {
@@ -101,74 +101,80 @@ let initialState = {
                 {
                     title: '',
                     url: child1,
-                    description: 'Какие огромные в детстве медведи'                
+                    description: 'Какие огромные в детстве медведи',
+                    orientation: 'portrait'                
                 },
                 {
                   title: '',
                   url: child2,
-                  description: 'Моя семья'                
+                  description: 'Моя семья',
+                  orientation: 'portrait'                
               },
                 {
                     title: '',
                     url: child3,
-                    description: 'С детства по военным городкам'                
+                    description: 'С детства по военным городкам',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: child4,
-                    description: 'Суровый север'                
+                    description: 'Суровый север',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: child5,
                     description: 'Отец',
-                    isVerticalOriented: true                
+                    orientation: 'landscape'               
                 },
                 {
                     title: 'Мама',
                     url: child6,
-                    description: ''                
+                    description: '' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: child7,
                     description: 'Я',
-                    isVerticalOriented: true                  
+                    orientation: 'landscape'                  
                 },
                 {
                     title: '',
                     url: child8,
                     description: 'В детском саду',
-                    isVerticalOriented: true                  
+                    orientation: 'landscape'                 
                 },
                 {
                     title: '',
                     url: child9,
                     description: 'Пока отец на службе',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'           
                 },
                 {
                     title: '',
                     url: child10,
                     description: 'Не в настроении...',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                    
                 },
                 {
                     title: '',
                     url: child11,
                     description: 'Октябренок',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                    
                 },
                 {
                     title: '',
                     url: child12,
-                    description: 'Начинающий водила'                
+                    description: 'Начинающий водила' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: child13,
                     description: 'С любимой бабушкой',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                  
                 },
             ]
         },
@@ -185,87 +191,91 @@ let initialState = {
                     title: '',
                     url: husband1,
                     description: 'Как молоды мы были...',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                 
                 },
                 {
                     title: '',
                     url: husband2,
-                    description: 'Проверка на прочность-))'                
+                    description: 'Проверка на прочность-))',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: husband3,
-                    description: 'Моменты настоящего счастья'                
+                    description: 'Моменты настоящего счастья',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: husband4,
-                    description: 'Впереди новая жизнь...'                
+                    description: 'Впереди новая жизнь...' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: husband5,
                     description: 'Чтбы стать женой генерала, надо выйти замуж за лейтенента',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                    
                 },
                 {
                     title: '',
                     url: husband6,
-                    description: 'Везде вместе'                
+                    description: 'Везде вместе',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: husband7,
                     description: 'Спортивная семья',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'               
                 },
                 {
                     title: '',
                     url: husband8,
                     description: 'Красивая пара',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                  
                 },
                 {
                     title: '',
                     url: husband9,
                     description: 'Любовь проверяется годами',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'      
                 },
                 {
                     title: '',
                     url: husband10,
                     description: 'Кто тут главный?-))',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'              
                 },
                 {
                     title: '',
                     url: husband11,
                     description: 'Под Новый год',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                  
                 },
                 {
                     title: '',
                     url: husband12,
                     description: 'Всё ещё неплохо смотримся',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'        
                 },
                 {
                     title: '',
                     url: husband13,
                     description: 'На жёнах всё держится',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'               
                 },
                 {
                     title: '',
                     url: husband14,
                     description: 'Красавица',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'                     
                 },
                 {
                     title: '',
                     url: husband15,
                     description: '15-летие свадьбы! Как вчера...',
-                    isVerticalOriented: true                     
+                    orientation: 'landscape'   
                 },
             ]
         },
@@ -282,46 +292,49 @@ let initialState = {
                     title: '',
                     url: owner1,
                     description: 'Со Спартаком, за Спартак!',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'             
                 },
                 {
                     title: '',
                     url: owner2,
                     description: 'Я Ваш подарочек...',
-                    isVerticalOriented: true                         
+                    orientation: 'landscape'                 
                 },
                 {
                     title: '',
                     url: owner3,
                     description: 'Зверь',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'                             
                 },
                 {
                     title: '',
                     url: owner4,
-                    description: 'Сторожевой пёс-))'                
+                    description: 'Сторожевой пёс-))',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: owner5,
-                    description: 'Порода из Тибета,суши любит-)'                
+                    description: 'Порода из Тибета,суши любит-)',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: owner6,
                     description: 'Милашки',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'                             
                 },
                 {
                     title: '',
                     url: owner7,
-                    description: 'Антистресс'                
+                    description: 'Антистресс',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: owner8,
                     description: 'Сугроб пришёл-)',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'                       
                 },
             ]
         },
@@ -336,60 +349,68 @@ let initialState = {
                 {
                     title: '',
                     url: father1,
-                    description: 'За рулём лимузина'    
+                    description: 'За рулём лимузина',
+                    orientation: 'portrait'    
                 },
                 {
                     title: '',
                     url: father2,
-                    description: 'Паровозик радости'                
+                    description: 'Паровозик радости' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: father3,
-                    description: 'С детства за Спартак!'                
+                    description: 'С детства за Спартак!',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: father4,
-                    description: 'Доча'                
+                    description: 'Доча',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: father5,
-                    description: 'Всё семейство на даче'                
+                    description: 'Всё семейство на даче' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: father6,
-                    description: 'На природе'                
+                    description: 'На природе' ,
+                    orientation: 'portrait'               
                 },
                 {
                     title: '',
                     url: father7,
-                    description: 'Семейная фотосессия'                
+                    description: 'Семейная фотосессия',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: father8,
                     description: 'Маленький, а уже грозный-)',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'             
                 },
                 {
                     title: '',
                     url: father9,
-                    description: 'Моя принцесса'                
+                    description: 'Моя принцесса',
+                    orientation: 'portrait'                
                 },
                 {
                     title: '',
                     url: father10,
                     description: 'Семья!',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'                             
                 },
                 {
                     title: '',
                     url: father11,
                     description: 'Первые уроки вождения',
-                    isVerticalOriented: true                             
+                    orientation: 'landscape'                   
                 },
 
 
