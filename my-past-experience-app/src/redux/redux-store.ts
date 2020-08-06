@@ -16,8 +16,12 @@ type RootReduserType = typeof rootReducer
 export type AppStateType = ReturnType<RootReduserType>
 
 //@ts-ignore
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(rootReducer);
+const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  rootReducer,
+  (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+);
 //@ts-ignore
 window.__store__ = store;
 

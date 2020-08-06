@@ -12,8 +12,8 @@ import PersonalityPathContainer from './components/PersonalityPathContainer';
 import HumanPathContainer from './components/HumanPathContainer';
 function App() {
   return (<div className="App">
-    <Container fluid className="h-100">
-      <Container className="h-100 d-flex flex-column">
+    <Container fluid className="h-100 d-flex flex-column justify-content-between">
+      <Container className="h-100  d-flex flex-column justify-content-between">
         <MainMenu />
         <Switch>
           <Route exact path='/'

@@ -1,14 +1,35 @@
+/* variables */
+:root {
+  --main-bg-color: #98AAB1;
+  --second-bg-color: #F2F4EE;
+  --third-bg-color: #98AAB1;
+  --fourth-bg-color: #375354;
+
+}
+
 .App {
   /* text-align: center; */
   height: 100vh;
 }
 
 .bg-primary{
-  background-color: #6e6e70!important;
+  background-color: var(--main-bg-color)!important;
 }
 
 .bg-secondary{
-  background-color: #eae5e5!important;
+  background-color: var(--second-bg-color)!important;
+}
+
+.bg-third{
+  background-color: var(--third-bg-color)!important;
+}
+
+.text-color-ligth{
+  color: var(--second-bg-color)!important;
+}
+
+.bg-success {
+  background-color:var(--fourth-bg-color)!important;
 }
 
 #footer {
@@ -23,6 +44,12 @@
 .photoDescription{
   background-color: rgba(110, 110, 112, 0.5);
 }
+
+#nextBlockBtn, #previousBlockBtn {
+  background-color: var(--main-bg-color)!important;
+  border-color: var(--main-bg-color)!important;
+}
+
 
 
 /* for main page */
