@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 import avatar from './../img/avatar.jpg';
 const MainMenu: React.FC<any> = React.memo((props) => {
     return (
-        <Row>
+        <Row id = 'maim-menu-wrp'>
           <Col className='pl-0 pr-0'>
             <Navbar id="main-menu" bg="primary" expand="lg" className="navbar-dark">
               <Navbar.Brand href="/" className="align-center">

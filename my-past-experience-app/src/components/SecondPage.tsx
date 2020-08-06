@@ -13,7 +13,6 @@ import Button from 'react-bootstrap/Button';
 const SecondPage: React.FC<any> = React.memo((props) => {
 
   useEffect(() => {
-
     !props.currentList.ID && props.setCurrentList(props.navBarList[0]);
   }, [props.currentList])
 

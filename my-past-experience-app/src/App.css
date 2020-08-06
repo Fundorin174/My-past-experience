@@ -32,9 +32,22 @@
   background-color:var(--fourth-bg-color)!important;
 }
 
-#footer {
+#footer #maim-menu-wrp{
   max-height: 100px;
 }
+
+#maim-menu-wrp{
+  flex: 0 0 0%;
+}
+
+#main-content{
+  flex: 1 0 0%;
+}
+
+#footer {
+  flex: 0 0 0%;
+}
+
 
 #card-img {
   height: 50px;
