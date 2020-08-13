@@ -22,7 +22,7 @@ function App() {
           <Route path='/warrior-path-page' render={() => <WarriorPathContainer />} />
           <Route path='/personality-path-page' render={() => <PersonalityPathContainer />} />
           <Route path='/man-path-page' render={() => <HumanPathContainer />} />
-          <Route path='*' render={() => <div>404 Page not found</div>} />
+          <Route render={() => <div>404 Page not found, sorry</div>} />
         </Switch>
         <Footer />
       </Container>
