@@ -44,11 +44,11 @@ const SecondPage: React.FC<any> = React.memo((props) => {
     </OverlayTrigger>
   })
 
-  let mainDescriptionItems = props.currentList.mainDescription?.map((phrase: string) => {
+  let mainDescriptionItems = props.currentList?.mainDescription?.map((phrase: string) => {
     return <p key = {Math.random()+1}>{phrase}</p>
   })
 
-  let caruselCreation = props.currentList.photos?.map((photoItem: photoType, index: number) => {
+  let caruselCreation = props.currentList?.photos?.map((photoItem: photoType, index: number) => {
     let orientationSizing;
     switch (photoItem.orientation) {
       case 'portrait':
