@@ -90,13 +90,13 @@ const SecondPage: React.FC<any> = React.memo((props) => {
     }
 
   return (
-    <Row id="main-content" className="h-100 pt-0 pb-0 bg-secondary d-flex align-content-center flex-grow-1">
-      <Col md={3} xs={1} className="bg-success h-100 navBarColumn" >
+    <Row id="main-content" className="min-vh-100 pt-0 pb-0 bg-secondary d-flex align-content-center flex-grow-1">
+      <Col md={3} xs={1} className="bg-success min-vh-100 navBarColumn" >
         <ul className="list-group mt-0 sticky-top">
           {navbarIcons}
         </ul>
       </Col>
-      <Col id='caruselWrp' md={9} xs={11} className="h-100 ">
+      <Col id='caruselWrp' md={9} xs={11} className="min-vh-100 ">
         <Container fluid>
           <h1>{props.currentList.title}</h1>
           {mainDescriptionItems}
