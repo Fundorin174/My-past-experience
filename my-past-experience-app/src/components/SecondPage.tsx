@@ -90,7 +90,7 @@ const SecondPage: React.FC<any> = React.memo((props) => {
     }
 
   return (
-    <Row id="main-content" className="min-vh-100 pt-0 pb-0 bg-secondary d-flex align-content-center flex-grow-1">
+    <Row id="main-content" className="h-100 pt-0 pb-0 bg-secondary d-flex align-content-center flex-grow-1">
       <Col md={3} xs={1} className="bg-success min-vh-100 navBarColumn" >
         <ul className="list-group mt-0 sticky-top">
           {navbarIcons}
